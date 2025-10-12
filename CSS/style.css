@@ -2,6 +2,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background: #f9f9f9;
+
   
 }
 header {
@@ -36,6 +37,8 @@ header {
   color: #000000fe;
   font-size: 20px;
   text-decoration: none;
+  font-weight: bold;
+  
 
 }
 .nav a:hover {
@@ -83,20 +86,4 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-}
-
-/* Css pour la page contact */
-
-form{
-  margin: 2px 10px;
-}
-.title{
-  margin: 7px 23px ;
-}
-.contact{
-  margin-left: 35px;
-  font-size: 19px;
-}
-.contact a{
-  text-decoration: none;
 }

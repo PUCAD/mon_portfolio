@@ -3,64 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Moussa SANE</title>
-     <link rel="stylesheet" href="style.css">
+    <title>Page d'Acceuil</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+     
 </head>
 <body>
-    <header>
-    <h1>Moussa SANE</h1>
-    <p>Étudiant en informatique - À  la recherche d'une alternance (septembre 2025)</p>
-    </header>
+  <header>
+    <nav>
+      <a href="#Acceuil">Acceuil</a>
+      <a href="#Projet">Projets</a>
+      <a href="#Contact">Contact</a>
+      <a href="https://www.linkedin.com/in/moussasane/">
+        <img src="IMAGE/linkdin.png" width="100px" height="50px" alt="Profil LinkedIn de Moussa SANE">
+      </a>
+    </nav>
+     
 
-    <section class="about_me">
-        <h2>À propos de moi</h2>
-    <p>Je suis un étudiant passionné par le développement web. J’ai des compétences en HTML, CSS, 
-        JavaScript et je cherche une alternance pour renforcer mon expérience professionnelle.</p>
+  </header>
+  <section id="Acceuil">
 
-    </section>
-    <section class="my_projects">
-    
+     
+    <article class="about_me">
+                   <h2>À propos de moi</h2>
+      <p>Je suis un étudiant en licence 3 mathématique informatique appliquées aux sciences humaines et sociales parcours informatique passionné par le développement web,
+        maîtrisant les technologies HTML, CSS et JavaScript.Motivé à approfondir mes compétences techniques et à acquérir une expérience professionnelle concrète, je recherche une
+        alternance qui me permettra de contribuer activement à des projets web tout en continuant à apprendre au sein d’une équipe  dynamique.
+        Je suis sérieux, curieux et prêt à m'investir pleinement pour relever les défis du développement web moderne.</p>
 
-    </section>
-     <section class="skills">
-    <h2>Compétences</h2>
-    <ul>
-      <li>HTML5 / CSS3</li>
-      <li>Responsive design (Flexbox, Grid)</li>
-      <li>JavaScript (DOM, événements, projets dynamiques,API)</li>
-      <li>PHP</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>C</li>
-      <li>GO</li>
-      <li>SQL</li>
-      <li>R</li>
-      <li>Git / GitHub</li>
-    </ul>
-  </section>
-   <section id="projets">
-      <h2>Mes projets</h2>
-      <div class="projet">
+    </article>
+  
+    <article class="skills">
+        <h2>Compétences</h2>
+          <ul>
+                <li>HTML5 / CSS3</li>
+                <li>Responsive design (Flexbox, Grid)</li>
+                <li>JavaScript (DOM, événements, projets dynamiques,API)</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>GO</li>
+                <li>SQL</li>
+                <li>R</li>
+                <li>Git / GitHub</li>
+          </ul>
+    </article>
+</section>
+<section id="Projets">
+
+      <article class="To-Do">
+        <h2>Mes projets</h2>
         <h3>To-Do List</h3>
         <p>Une application simple pour gérer des tâches </p>
         <a href="todo/index.html" target="_blank">Voir le projet</a>
-    </div>
+      </article>   
+</section>
+<section id="Contact">
+   <h1 class="title">Nous contacter </h1>
+      <p class="contact">Email : <a href="mailto:misterpa.2002@gmail.com">misterpa.2002@gmail.com</a></p>
+      <p class="contact">Téléphone : 07.58.06.85.92</p>
+ <form action="https://formspree.io/f/xblzpjwq" method="POST">
+    <fieldset>
+        <legend>Me contacter</legend> <br>
+        <label for="emailinput">Votre email</label>
+        <input type="email" name="email" id="emailinput" placeholder="nom.prenom@gmail.fr" required><br><br>
 
-    
-  </section>
+        <label for="nameinput">Votre nom</label>
+        <input type="text" name="nom" id="nameinput" required><br><br>
 
-   <section class="contact">
-      <h2>Contact</h2>
-      <p>Email : <a href="mailto:misterpa.2002@gmail.com">misterpa.2002@gmail.com</a></p>
-      <p>Téléphone : 07.58.06.85.92</p>
-      <p>LinkedIn : <a href="https://www.linkedin.com/in/moussasane"> Mon profil</a></p>
-    
-  
-    
-  </section>
+        <label for="message">Votre message</label><br>
+        <textarea name="message" id="message" cols="100" rows="10" placeholder="Votre message" required></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </fieldset>
+</form>
+
+</section>
 
    <footer>
     <p>&copy; 2025 - Moussa SANE</p>
   </footer>
+  
 </body>
 </html>
